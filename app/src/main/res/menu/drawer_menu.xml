@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="@string/home"
+            android:icon="@drawable/ic_home_menu">
+        </item>
+        <item
+            android:id="@+id/terceiros"
+            android:title="@string/terceiros"
+            android:icon="@drawable/ic_terceiros_menu">
+        </item>
+        <item
+            android:id="@+id/cartao"
+            android:title="@string/cartao"
+            android:icon="@drawable/ic_cartao_menu">
+        </item>
+        <item
+            android:id="@+id/contaCorrente"
+            android:title="@string/conta_corrente"
+            android:icon="@drawable/ic_money">
+        </item>
+
+        <item android:title="@string/cadastros">
+            <menu>
+                <item
+                    android:id="@+id/cadTerceiros"
+                    android:title="@string/terceiros"
+                    android:icon="@drawable/ic_terceiros_menu">
+
+                </item>
+            </menu>
+        </item>
+
+    </group>
+</menu>

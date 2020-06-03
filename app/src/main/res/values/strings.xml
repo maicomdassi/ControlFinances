@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">MyControlFinances</string>
+    <string name="cartao">Cartão</string>
+    <string name="terceiros">Terceiros</string>
+    <string name="home">Home</string>
+    <string name="cadastros">Cadastros</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_terceiro_list">TerceiroListActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="salvar">Salvar</string>
+    <string name="nome">Nome</string>
+    <string name="nomeCartao">Nome/Decrição</string>
+    <string name="title_activity_lista_terceiros">listaTerceirosActivity</string>
+    <string name="title_activity_list_cartao">ListCartaoActivity</string>
+    <string name="ulti_4_d_gitos">Ulti. 4 Dígitos</string>
+    <string name="melhor_dia">Melhor Dia</string>
+    <string name="bandeira">Bandeira</string>
+    <string name="dia_vencimento_fatura">Dia Vencim. Fatura</string>
+    <string name="limite">Limite</string>
+    <string name="descricao">Descrição</string>
+    <string name="agencia">Agência</string>
+    <string name="conta_corrente">Conta Corrente</string>
+    <string name="saldo">Saldo</string>
+    <string name="digito">Dígito</string>
+    <string name="tipo">Tipo</string>
+    <string name="pessoal">Pessoal</string>
+    <string name="terceiro">Terceiro</string>
+    <string name="gerar_conta_a_receber">Gerar Conta a Receber</string>
+    <string name="forma_de_pagamento">Selecionar Forma de Pagamento</string>
+    <string name="valor">Valor</string>
+    <string name="parcelas">Parcelas</string>
+    <string name="data_da_compra">Data da Compra</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="anuidade_mensal">Anuidade/Mensal</string>
+
+</resources>

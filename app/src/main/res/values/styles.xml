@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>-->
+
+
+    <style name="MyAppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="drawerArrowStyle">@style/DrawerColor</item>
+
+    </style>
+
+
+
+    <style name="DrawerColor" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/whiteColor</item>
+    </style>
+
+    <style name="MyAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.EditCartaoActivity">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/app_bar">
+    </include>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputEditNomeCartao"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:endIconMode="clear_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEditNomeCartao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:hint="@string/nomeCartao"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputEditNumeros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:endIconMode="clear_text"
+        android:layout_below="@id/inputEditNomeCartao"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEditNumeros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/ulti_4_d_gitos"
+            android:maxLength="4"
+            android:textSize="20sp"
+            android:inputType="number">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginLeft="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:endIconMode="dropdown_menu"
+        android:layout_below="@id/inputEditNumeros"
+        android:id="@+id/inputEditMelhorDia"
+        android:hint="@string/melhor_dia"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/txtEditMelhorDia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/melhor_dia">
+        </AutoCompleteTextView>
+
+        <!--<com.google.android.material.textfield.TextInputEditText
+           >
+
+        </com.google.android.material.textfield.TextInputEditText>-->
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:endIconMode="clear_text"
+        android:id="@+id/inputEditBandeira"
+        android:layout_below="@id/inputEditMelhorDia"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEditBandeira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/bandeira"
+            android:textSize="20sp"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputEditVencimento"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputEditNumeros"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/inputEditMelhorDia"
+        android:hint="@string/dia_vencimento_fatura"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:endIconMode="dropdown_menu">
+
+        <AutoCompleteTextView
+            android:id="@+id/txtEditVencimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dia_vencimento_fatura"
+            android:inputType="number"
+            android:layout_marginRight="10dp"
+            >
+
+        </AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:endIconMode="clear_text"
+        android:id="@+id/inputEditLimites"
+        android:layout_below="@id/inputEditBandeira"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEditLimite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/limite"
+            android:textSize="20sp"
+            android:inputType="numberDecimal">
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:endIconMode="clear_text"
+        android:id="@+id/inputEditAnuidade"
+        android:layout_below="@id/inputEditLimites"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEditAnuidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/anuidade_mensal"
+            android:textSize="20sp"
+            android:inputType="numberDecimal">
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btn_EditCartao"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textColor="@color/whiteColor"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="editCartao"
+        android:text="@string/salvar"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/inputEditAnuidade"
+        />
+
+</RelativeLayout>

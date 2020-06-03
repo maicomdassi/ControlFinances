@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHome"
+        android:gravity="center"
+        android:text="Text View Home"
+        android:layout_centerInParent="true"
+        android:textColor="@color/blackColor"
+        android:textSize="28dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCPag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/red"
+        app:srcCompat="@drawable/ic_remove">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCReceb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/Blue"
+        app:srcCompat="@drawable/ic_add">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

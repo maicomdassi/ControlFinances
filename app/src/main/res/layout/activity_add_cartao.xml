@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AddCartaoActivity">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/app_bar">
+    </include>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputAddNomeCartao"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:endIconMode="clear_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtAddNomeCartao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:hint="@string/nomeCartao"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputAddNumeros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:endIconMode="clear_text"
+        android:layout_below="@id/inputAddNomeCartao"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/txtAddNumeros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/ulti_4_d_gitos"
+            android:maxLength="4"
+            android:textSize="20sp"
+            android:inputType="number">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginLeft="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:endIconMode="dropdown_menu"
+        android:layout_below="@id/inputAddNumeros"
+        android:id="@+id/inputAddMelhorDia"
+        android:hint="@string/melhor_dia"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/txtAddMelhorDia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/melhor_dia">
+        </AutoCompleteTextView>
+
+        <!--<com.google.android.material.textfield.TextInputEditText
+           >
+
+        </com.google.android.material.textfield.TextInputEditText>-->
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:endIconMode="clear_text"
+        android:id="@+id/inputAddBandeira"
+        android:layout_below="@id/inputAddMelhorDia"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtAddBandeira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/bandeira"
+            android:textSize="20sp"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputAddVencimento"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputAddNumeros"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/inputAddMelhorDia"
+        android:hint="@string/dia_vencimento_fatura"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:endIconMode="dropdown_menu">
+
+        <AutoCompleteTextView
+            android:id="@+id/txtAddVencimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dia_vencimento_fatura"
+            android:inputType="number"
+            android:layout_marginRight="10dp"
+            >
+
+        </AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:endIconMode="clear_text"
+        android:id="@+id/inputAddLimites"
+        android:layout_below="@id/inputAddBandeira"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtAddLimite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/limite"
+            android:textSize="20sp"
+            android:inputType="numberDecimal">
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:endIconMode="clear_text"
+        android:id="@+id/inputAddAnuidade"
+        android:layout_below="@id/inputAddLimites"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtAddAnuidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/anuidade_mensal"
+            android:textSize="20sp"
+            android:inputType="numberDecimal">
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btn_addCartao"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textColor="@color/whiteColor"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="addCartao"
+        android:text="@string/salvar"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/inputAddAnuidade"
+        />
+
+</RelativeLayout>
